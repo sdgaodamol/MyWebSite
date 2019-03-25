@@ -1,0 +1,124 @@
+﻿body {
+    font-family: 微软雅黑;
+    background-color: rgb(204,232,207);
+    /*--background-color: rgba(45,44,80,0.8); 暂未使用白葡萄背景色--*/
+    color: rgb(45,44,80);
+}
+/*欢迎区域*/
+.welcome {
+    height: 200px;
+    margin-bottom: 1.2em;
+    background: url(/Images/main/welcome.jpg) no-repeat left center;
+    background-size: 100% auto;
+    position: relative;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 2px outset rgb(224,238,246);
+    box-shadow: 5px 5px 10px rgba(45,44,80,.5);
+}
+.welcome h1 {
+        position: absolute;
+        left: 35%;
+        top: 55%;
+        color: rgb(252,250,249);
+        text-shadow: 4px 4px 6px rgb(45,44,80);
+    }
+/*欢迎区域结束*/
+/*文章告知区域*/
+.article div {
+    background-color: rgba(143,208,237,1);
+    height: 300px;
+    margin-bottom: 0.8em;
+    position: relative;
+    border: 2px outset rgb(224,238,246);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(45,44,80,.5);
+    overflow: hidden;
+}
+.article div:hover{
+    box-shadow: 0 0 0;
+    border: 3px solid white;
+}
+.article img{
+    width: 100%;
+    height: 100%;
+}
+#des1, #des2 {
+    text-align: left;
+    color: rgb(252,250,249);
+    background-color: rgba(45,44,80,0.8);
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 1.2em;
+    padding: 1px 12px;
+}
+span.desID{
+    font-size: 0.75em;
+    float: right;
+    margin: 5px 0 0 0;
+}
+/*文章告知区域结束*/
+/*右边栏信息区域*/
+body aside{ 
+  overflow: hidden;
+  padding: 5px 5px!important;
+}
+aside div.container{
+    margin: 0;
+    margin-bottom: 1.5em;
+    padding: 5px 0!important;
+    max-width:360px;
+    background-color: rgba(143,208,237,1);
+    border: 2px outset rgb(224,238,246);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(45,44,80,.5);
+}
+aside img{
+    width:200px;
+}
+aside div.about {
+    margin: 0;
+    margin-bottom: 1.5em;
+    padding: 5px 10px !important;
+    background-color: rgba(143,208,237,1);
+    max-width: 360px;
+    border: 2px outset rgb(224,238,246);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(45,44,80,.5);
+}
+span.badge {
+    box-shadow: 2px 2px 5px rgba(45,44,80,.5);
+}
+span.badge:hover {
+    border: 1px solid white;
+    color: rgb(45,44,80);
+    background-color: rgb(204,232,207);
+    box-shadow: 0 0 0;
+    cursor: pointer;
+}
+aside span.label {
+    font-size: 0.9em;
+    box-shadow: 1px 1px 2px rgba(45,44,80,.5);
+    padding: 1px 2px;
+}
+aside span.label-default {
+    background-color: rgba(255,105,180,.5);
+}
+aside span.label:hover {
+    border: 1px solid rgb(252,250,249);
+    box-shadow:  0 0 0 ;
+    cursor: pointer;
+}
+/*右边栏信息区域结束*/
+/*页脚区域*/
+footer {
+    padding: 5px 10px !important;
+    color: rgb(252,250,249);
+    background-color: rgba(45,44,80,0.8);
+    border: 2px outset rgb(224,238,246);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(45,44,80,.5);
+}
+/*页脚区域结束*/

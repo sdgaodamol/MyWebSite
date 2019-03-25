@@ -1,0 +1,32 @@
+﻿body {
+    border-left: 1px solid rgb(143,208,237);
+    border-right: 1px solid rgb(143,208,237);
+    background: rgba(45,44,80,.5);
+}
+.head{
+    height: 3em;
+}
+label {
+    text-align: center;
+    margin: 3px 0;
+}
+input{
+    margin: 3px 0;
+    background: rgb(224,238,246);
+    text-align:center;
+}
+input#A_ID{
+    background-color:gainsboro;
+}
+input#A_DATE{
+    background-color:gainsboro;
+}
+input#A_Submit{
+    background: rgb(255,255,255);
+    margin-bottom: 2em;
+}
+textarea {
+    background: rgb(224,238,246);
+    overflow-y: scroll;
+    resize: none;
+}

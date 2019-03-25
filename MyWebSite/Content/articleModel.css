@@ -1,0 +1,45 @@
+body{
+    background-color: rgba(45,44,80,0.5);
+    color: rgb(252,250,249);
+}
+.row{
+    background-color: rgba(143,208,237,0.5);
+    border-bottom: 3px ridge rgba(224,238,246,1);
+    padding: 5px 10px 5px 10px;
+}
+button{
+    color: rgb(45,44,80);
+}
+#pageBack{
+    float: left;
+}
+#pageForward{
+    float: right;
+}
+section h1{
+    text-align: center;
+    font-size: 2em;
+}
+section h2{
+    font-size: 1.5em;
+}
+time{
+    text-align: right;
+}
+#A_ID{
+    text-align: right;
+}
+details.row{
+    padding: 0;
+}
+details section.col-md-12{
+    margin: 0px 5px 5px 5px;
+}
+details summary{
+    background-color: rgba(45,44,80,0.5);
+    text-align: center;
+    padding: 3px 0;
+}
+details summary:hover{
+    cursor: pointer;
+}
