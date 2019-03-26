@@ -44,7 +44,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DBManager_MSSQL">
+      <HintPath>..\DBManager_MSSQL\bin\Debug\DBManager_MSSQL.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MyIO">
+      <HintPath>..\MyIO\bin\Debug\MyIO.dll</HintPath>
+    </Reference>
+    <Reference Include="MyString">
+      <HintPath>..\MyString\bin\Debug\MyString.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -132,14 +141,175 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="App_Data\ArticleModel.html" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Antlr3.Runtime.pdb" />
+    <Content Include="bin\AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="bin\DBManager_MSSQL.dll" />
+    <Content Include="bin\DBManager_MSSQL.pdb" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="bin\Microsoft.AspNet.TelemetryCorrelation.dll" />
+    <Content Include="bin\Microsoft.AspNet.TelemetryCorrelation.xml" />
+    <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\MyIO.dll" />
+    <Content Include="bin\MyIO.pdb" />
+    <Content Include="bin\MyString.dll" />
+    <Content Include="bin\MyString.pdb" />
+    <Content Include="bin\MyWebSite.dll" />
+    <Content Include="bin\MyWebSite.pdb" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\Release\Publish\About.aspx" />
+    <Content Include="bin\Release\Publish\bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Release\Publish\bin\Antlr3.Runtime.pdb" />
+    <Content Include="bin\Release\Publish\bin\AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="bin\Release\Publish\bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="bin\Release\Publish\bin\DBManager_MSSQL.dll" />
+    <Content Include="bin\Release\Publish\bin\DBManager_MSSQL.pdb" />
+    <Content Include="bin\Release\Publish\bin\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="bin\Release\Publish\bin\Microsoft.AspNet.TelemetryCorrelation.dll" />
+    <Content Include="bin\Release\Publish\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="bin\Release\Publish\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Release\Publish\bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="bin\Release\Publish\bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="bin\Release\Publish\bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Release\Publish\bin\MyWebSite.dll" />
+    <Content Include="bin\Release\Publish\bin\MyWebSite.pdb" />
+    <Content Include="bin\Release\Publish\bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\csc.exe" />
+    <Content Include="bin\Release\Publish\bin\roslyn\csi.exe" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\Release\Publish\bin\roslyn\vbc.exe" />
+    <Content Include="bin\Release\Publish\bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\Release\Publish\bin\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="bin\Release\Publish\bin\System.Web.Helpers.dll" />
+    <Content Include="bin\Release\Publish\bin\System.Web.Mvc.dll" />
+    <Content Include="bin\Release\Publish\bin\System.Web.Optimization.dll" />
+    <Content Include="bin\Release\Publish\bin\System.Web.Razor.dll" />
+    <Content Include="bin\Release\Publish\bin\System.Web.Webpages.Deployment.dll" />
+    <Content Include="bin\Release\Publish\bin\System.Web.Webpages.dll" />
+    <Content Include="bin\Release\Publish\bin\System.Web.Webpages.Razor.dll" />
+    <Content Include="bin\Release\Publish\bin\WebGrease.dll" />
+    <Content Include="bin\Release\Publish\bin\zh-Hans\Microsoft.AspNet.FriendlyUrls.resources.dll" />
+    <Content Include="bin\Release\Publish\bin\zh-Hans\System.Web.Helpers.resources.dll" />
+    <Content Include="bin\Release\Publish\bin\zh-Hans\System.Web.Mvc.resources.dll" />
+    <Content Include="bin\Release\Publish\bin\zh-Hans\System.Web.Optimization.resources.dll" />
+    <Content Include="bin\Release\Publish\bin\zh-Hans\System.Web.Razor.resources.dll" />
+    <Content Include="bin\Release\Publish\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll" />
+    <Content Include="bin\Release\Publish\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll" />
+    <Content Include="bin\Release\Publish\bin\zh-Hans\System.Web.Webpages.resources.dll" />
+    <Content Include="bin\Release\Publish\Contact.aspx" />
+    <Content Include="bin\Release\Publish\Content\bootstrap-theme.css" />
+    <Content Include="bin\Release\Publish\Content\bootstrap-theme.min.css" />
+    <Content Include="bin\Release\Publish\Content\bootstrap.css" />
+    <Content Include="bin\Release\Publish\Content\bootstrap.min.css" />
+    <Content Include="bin\Release\Publish\Content\main.css" />
+    <Content Include="bin\Release\Publish\Content\Site.css" />
+    <Content Include="bin\Release\Publish\Default.aspx" />
+    <Content Include="bin\Release\Publish\favicon.ico" />
+    <Content Include="bin\Release\Publish\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bin\Release\Publish\Global.asax" />
+    <Content Include="bin\Release\Publish\main.aspx" />
+    <Content Include="bin\Release\Publish\Scripts\bootstrap.js" />
+    <Content Include="bin\Release\Publish\Scripts\bootstrap.min.js" />
+    <Content Include="bin\Release\Publish\Scripts\jquery-3.3.1.js" />
+    <Content Include="bin\Release\Publish\Scripts\jquery-3.3.1.min.js" />
+    <Content Include="bin\Release\Publish\Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="bin\Release\Publish\Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="bin\Release\Publish\Scripts\main.js" />
+    <Content Include="bin\Release\Publish\Scripts\modernizr-2.8.3.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\DetailsView.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\Focus.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\GridView.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\Menu.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\MenuStandards.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\SmartNav.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\TreeView.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\WebForms.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\WebParts.js" />
+    <Content Include="bin\Release\Publish\Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="bin\Release\Publish\ViewSwitcher.ascx" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="bin\System.Diagnostics.DiagnosticSource.xml" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Optimization.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.Deployment.dll" />
+    <Content Include="bin\System.Web.Webpages.Deployment.xml" />
+    <Content Include="bin\System.Web.Webpages.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.xml" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.AspNet.FriendlyUrls.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Helpers.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Mvc.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Optimization.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Razor.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Webpages.Razor.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Webpages.resources.dll" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\createArticle.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="createArticle.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -151,7 +321,171 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="bin\MyWebSite.dll.config" />
+    <Content Include="bin\Release\Publish\bin\roslyn\csc.exe.config" />
+    <Content Include="bin\Release\Publish\bin\roslyn\csc.rsp" />
+    <Content Include="bin\Release\Publish\bin\roslyn\csi.rsp" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\Release\Publish\bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\Release\Publish\bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\Release\Publish\bin\roslyn\vbc.rsp" />
+    <Content Include="bin\Release\Publish\bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="bin\Release\Publish\Bundle.config" />
+    <Content Include="bin\Release\Publish\Content\bootstrap-theme.css.map" />
+    <Content Include="bin\Release\Publish\Content\bootstrap-theme.min.css.map" />
+    <Content Include="bin\Release\Publish\Content\bootstrap.css.map" />
+    <Content Include="bin\Release\Publish\Content\bootstrap.min.css.map" />
+    <Content Include="bin\Release\Publish\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bin\Release\Publish\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bin\Release\Publish\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bin\Release\Publish\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="bin\Release\Publish\Scripts\jquery-3.3.1.min.map" />
+    <Content Include="bin\Release\Publish\Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="bin\Release\Publish\Site.Master" />
+    <Content Include="bin\Release\Publish\Site.Mobile.Master" />
+    <Content Include="bin\Release\Publish\Views\web.config" />
+    <Content Include="bin\Release\Publish\Web.config" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\main\welcome.jpg" />
+    <Content Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\MyWebSite.csproj.CopyComplete" />
+    <Content Include="obj\Release\MyWebSite.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Release\MyWebSite.csprojAssemblyReference.cache" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csc.exe.config" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csc.rsp" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csi.rsp" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe.config" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\vbc.rsp" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="obj\Release\Package\PackageTmp\Bundle.config" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap-theme.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap-theme.min.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.min.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-3.3.1.min.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Site.Master" />
+    <Content Include="obj\Release\Package\PackageTmp\Site.Mobile.Master" />
+    <Content Include="obj\Release\Package\PackageTmp\Views\web.config" />
+    <Content Include="obj\Release\Package\PackageTmp\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\assist\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\original\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\transformed\Web.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="main.aspx" />
+    <Content Include="obj\Release\MyWebSite.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\MyWebSite.dll" />
+    <Content Include="obj\Release\MyWebSite.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\About.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Antlr3.Runtime.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Antlr3.Runtime.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\DBManager_MSSQL.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\DBManager_MSSQL.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.TelemetryCorrelation.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\MyWebSite.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\MyWebSite.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Newtonsoft.Json.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csc.exe" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csi.exe" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.AppContext.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Helpers.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Mvc.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Optimization.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Razor.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Webpages.Deployment.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Webpages.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Webpages.Razor.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\WebGrease.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\zh-Hans\Microsoft.AspNet.FriendlyUrls.resources.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\zh-Hans\System.Web.Helpers.resources.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\zh-Hans\System.Web.Mvc.resources.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\zh-Hans\System.Web.Optimization.resources.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\zh-Hans\System.Web.Razor.resources.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\zh-Hans\System.Web.Webpages.resources.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\Contact.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap-theme.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap-theme.min.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.min.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\main.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Site.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Default.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\favicon.ico" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="obj\Release\Package\PackageTmp\Global.asax" />
+    <Content Include="obj\Release\Package\PackageTmp\main.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\bootstrap.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\bootstrap.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-3.3.1.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-3.3.1.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\main.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\modernizr-2.8.3.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\DetailsView.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\Focus.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\GridView.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\Menu.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MenuStandards.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\SmartNav.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\TreeView.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebForms.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebParts.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="obj\Release\Package\PackageTmp\ViewSwitcher.ascx" />
+    <Content Include="obj\Release\_WPPLastBuildInfo.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -188,32 +522,32 @@
     <Content Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Data\WebSiteBackStage.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="createArticle.aspx.cs">
+      <DependentUpon>createArticle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="createArticle.aspx.designer.cs">
+      <DependentUpon>createArticle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -238,9 +572,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="Article\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="obj\Release\ProfileTransformWebConfig\transformed\Views\" />
+    <Folder Include="obj\Release\TempPE\" />
+    <Folder Include="obj\Release\TransformWebConfig\transformed\Views\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
